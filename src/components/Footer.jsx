@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
-    <div className=" flex justify-center gap-5 ">
+    <div className=" flex justify-center gap-5 m-2 p-1 absolute bottom-0 right-0">
       <FontAwesomeIcon
         icon={faGithub}
         size="2x"
