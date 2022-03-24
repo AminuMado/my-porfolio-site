@@ -1,5 +1,8 @@
 import React from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
+import useSound from "use-sound";
+import lightModeSfx from "./Assets/lightMode.mp3";
+import darkModeSfx from "./Assets/darkMode.mp3";
 
 function Switcher() {
   const [theme, setTheme] = React.useState("light");
@@ -27,8 +30,20 @@ function Switcher() {
     }
   }, [theme, darkMode]);
 
+  // Sounds Section
+
+  const [playOn] = useSound(lightModeSfx, { volume: 0.35 });
+  const [playOff] = useSound(darkModeSfx, { volume: 0.25 });
+
   return (
-    <DarkModeSwitch checked={darkMode} onChange={toggleDarkMode} size={56} />
+    <DarkModeSwitch
+      checked={darkMode}
+      onChange={toggleDarkMode}
+      size={56}
+      onMouseUp={() => {
+        darkMode ? playOn() : playOff();
+      }}
+    />
   );
 }
 
