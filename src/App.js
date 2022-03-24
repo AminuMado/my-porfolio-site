@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import Switcher from "./switcher";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
         Hello world!
       </h1>
       <Switcher />
+      <Footer />
     </div>
   );
 }
