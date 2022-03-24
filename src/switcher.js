@@ -7,17 +7,26 @@ function Switcher() {
     theme === "light" ? false : true
   );
   function toggleDarkMode(checked) {
-    setTheme(altTheme);
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
     setDarkMode(checked);
   }
 
-  const altTheme = theme === "light" ? "dark" : "light";
-
   React.useEffect(() => {
     const root = window.document.documentElement;
-    root.classList.remove(altTheme);
-    root.classList.add(theme);
-  }, [theme, altTheme, darkMode]);
+    switch (theme) {
+      case "light":
+        root.classList.remove("dark");
+        root.classList.add("light");
+        break;
+      case "dark":
+        root.classList.remove("light");
+        root.classList.add("dark");
+        break;
+      default:
+        break;
+    }
+  }, [theme, darkMode]);
+
   return (
     <DarkModeSwitch checked={darkMode} onChange={toggleDarkMode} size={56} />
   );
