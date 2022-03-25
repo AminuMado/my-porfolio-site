@@ -4,7 +4,7 @@ import useSound from "use-sound";
 import lightModeSfx from "./Assets/lightMode.mp3";
 import darkModeSfx from "./Assets/darkMode.mp3";
 
-function Switcher() {
+function Switcher({ setMode }) {
   const [theme, setTheme] = React.useState("light");
   const [darkMode, setDarkMode] = React.useState(
     theme === "light" ? false : true
@@ -12,6 +12,7 @@ function Switcher() {
   function toggleDarkMode(checked) {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
     setDarkMode(checked);
+    setMode(theme === "light" ? "dark" : "light");
   }
 
   React.useEffect(() => {
