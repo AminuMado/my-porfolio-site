@@ -38,9 +38,10 @@ function Switcher({ setMode }) {
 
   return (
     <DarkModeSwitch
+      className="absolute right-4 top-1"
       checked={darkMode}
       onChange={toggleDarkMode}
-      size={56}
+      size={40}
       onMouseUp={() => {
         darkMode ? playOn() : playOff();
       }}
