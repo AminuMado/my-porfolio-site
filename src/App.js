@@ -14,9 +14,18 @@ function App() {
       <React.Fragment>
         <Routes>
           <Route path="/" element={<Home mode={mode} setMode={setMode} />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Project" element={<Project />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route
+            path="/About"
+            element={<About mode={mode} setMode={setMode} />}
+          />
+          <Route
+            path="/Project"
+            element={<Project mode={mode} setMode={setMode} />}
+          />
+          <Route
+            path="/Contact"
+            element={<Contact mode={mode} setMode={setMode} />}
+          />
         </Routes>
       </React.Fragment>
     </BrowserRouter>
