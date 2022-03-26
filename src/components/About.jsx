@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 function About({ mode, setMode }) {
   return (
-    <div>
+    <div className="transition duration-1000 ease-out bg-slate-50 dark:bg-black h-screen">
       <Navbar />
       <Switcher setMode={setMode} />
       <Footer />
