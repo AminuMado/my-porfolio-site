@@ -1,13 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Switcher from "../switcher";
 import Footer from "./Footer";
 
 function About({ mode, setMode }) {
   return (
     <div className="transition duration-1000 ease-out bg-slate-50 dark:bg-black h-screen">
       <Navbar />
-      <Switcher setMode={setMode} />
       <Footer />
       <svg
         xmlns="http://www.w3.org/2000/svg"
