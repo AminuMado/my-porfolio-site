@@ -5,8 +5,8 @@ import Footer from "./Footer";
 function Home() {
   return (
     <div
-      className="flex flex-col items-center justify-center transition duration-500 ease-out bg-slate-50 dark:bg-black dark:text-white h-screen 
-    before:bg-green-400 before:h-80 before:w-screen before:absolute before:bottom-0 "
+      className="flex flex-col items-center justify-center transition duration-500 ease-out bg-blue-100 dark:bg-black dark:text-white h-screen 
+    before:bg-blue-200 before:h-80 before:w-screen before:absolute before:bottom-0 "
     >
       <Navbar />
       <div className="flex flex-col z-10 gap-10 justify-self-center">
