@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <header className="flex justify-center items-center p-2">
+    <header className="absolute left-1/3/2 top-1 flex justify-center items-center p-2">
       <nav>
         <ul className="flex justify-center items-center gap-10 text-xl">
           <Link to="/">
-            <li className="cursor-pointer transition-all duration-300 hover:text-#05204A  active:scale-105">
+            <li className="cursor-pointer transition-all duration-300 hover:text-green-400  active:scale-105">
               Home
             </li>
           </Link>

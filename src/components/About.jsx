@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 function About({ mode, setMode }) {
   return (
-    <div className="transition duration-500 ease-out bg-slate-50 dark:bg-black dark:text-white h-screen">
+    <div className="flex flex-col items-center justify-center transition duration-500 ease-out bg-slate-50 dark:bg-black dark:text-white h-screen">
       <Navbar />
       <Footer />
       <svg
