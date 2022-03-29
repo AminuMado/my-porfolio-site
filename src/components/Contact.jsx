@@ -11,27 +11,25 @@ function Contact({ mode, setMode }) {
         <section>
           <h1>PING ME</h1>
           <p>
-            Want to say "Hey!"?Got something you'd like to ask? New project or
-            opportunity? Want to hire me? Ping me!
+            Want to say "Hey!"? Got something you'd like to ask? Ask for my
+            resume? Or see if we can build something amazing together? Ping me!
+            I’d love to hear from you!
           </p>
-          <p>
-            Use the form below. Or, for a quicker response, ping me over on
-            Twitter.
-          </p>
+          <p>Use the form below</p>.
           <p>Alternatively, shoot me an email at madoaminu@gmail.com</p>
         </section>
         <form>
           <div>
-            <label for="name">Name *</label>
-            <input id="name" type="text" name="name" required="true" />
+            <label htmlFor="name">Name *</label>
+            <input id="name" type="text" name="name" required={true} />
           </div>
           <div>
-            <label for="email">Email *</label>
-            <input id="email" type="email" name="email" required="true" />
+            <label htmlFor="email">Email *</label>
+            <input id="email" type="email" name="email" required={true} />
           </div>
           <div>
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" required="true"></textarea>
+            <label htmlFor="message">Message *</label>
+            <textarea id="message" name="message" required={true}></textarea>
           </div>
           <button type="submit">Send</button>
         </form>
