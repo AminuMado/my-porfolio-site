@@ -7,6 +7,35 @@ function Contact({ mode, setMode }) {
     <div className="flex flex-col items-center justify-center transition duration-500 ease-out bg-slate-50 dark:bg-black dark:text-white h-screen">
       <Navbar />
       <Footer />
+      <main>
+        <section>
+          <h1>PING ME</h1>
+          <p>
+            Want to say "Hey!"?Got something you'd like to ask? New project or
+            opportunity? Want to hire me? Ping me!
+          </p>
+          <p>
+            Use the form below. Or, for a quicker response, ping me over on
+            Twitter.
+          </p>
+          <p>Alternatively, shoot me an email at madoaminu@gmail.com</p>
+        </section>
+        <form>
+          <div>
+            <label for="name">Name *</label>
+            <input id="name" type="text" name="name" required="true" />
+          </div>
+          <div>
+            <label for="email">Email *</label>
+            <input id="email" type="email" name="email" required="true" />
+          </div>
+          <div>
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required="true"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </main>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
