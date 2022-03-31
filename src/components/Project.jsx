@@ -1,23 +1,67 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 function Project({ mode, setMode }) {
   return (
-    <div className="flex flex-col items-center justify-center transition duration-500 ease-out bg-slate-50 dark:bg-black dark:text-white h-screen">
+    <div className="flex flex-col items-center justify-center transition duration-500 ease-out bg-slate-50 dark:bg-black dark:text-white h-screen overflow-auto p-20">
       <Navbar />
       <Footer />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1240 300"
-        className="absolute bottom-0 z-10 "
-      >
-        <path
-          fill={mode === "light" ? "#C5EFFC" : "#001429"}
-          fillOpacity="1"
-          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
+      <main className="font-Karma flex flex-col items-center overflow-auto">
+        <p>
+          Day to day I spend most of my time learning and building stuff,here's
+          some of the stuff I've done personally recently.
+        </p>
+        <div className="flex  flex-wrap p-5 m-5 gap-5 justify-center">
+          <article className="min-w-[400px] basis-1/4 border-2 p-12 -ml-1 -mt-1 flex flex-col items-start gap-4">
+            <h2 className="text-2xl underline font-Karma">Cv-Creator</h2>
+            <div className="project-list-item-description">
+              An app that allows the user to input their information,
+              experiences and education. The site then format it into a CV.
+            </div>
+            <Link to="/Project/1" className="mt-auto ">
+              <button
+                className="border-2 p-2 mt-auto cursor-pointer transition-colors duration-500 rounded-md
+              active:scale-95 hover:bg-blue-200   dark:text-white dark:hover:bg-blue-900"
+              >
+                About the project
+              </button>
+            </Link>
+          </article>
+          <article className="min-w-[400px] basis-1/4 border-2 p-12 -ml-1 -mt-1 flex flex-col items-start gap-4">
+            <h2 className="text-2xl underline">Retro Js Shop</h2>
+            <div className="project-list-item-description">
+              A sneakers shop where the user can browse through catalog of retro
+              jordans 1s, and have dynamic interaction with cart management.
+            </div>
+
+            <Link to="/Project/2" className="mt-auto ">
+              <button
+                className="border-2 p-2 mt-auto cursor-pointer transition-colors duration-500 rounded-md
+              active:scale-95 hover:bg-blue-200   dark:text-white dark:hover:bg-blue-900"
+              >
+                About the project
+              </button>
+            </Link>
+          </article>
+          <article className="min-w-[400px] basis-1/4 border-2 p-12 -ml-1 -mt-1 flex flex-col items-start gap-4">
+            <h2 className="text-2xl underline">Social Media Clone</h2>
+            <div className="project-list-item-description">
+              A fullstack app that clones a social media app functionality....
+              Coming Soon
+            </div>
+            <Link to="/Project/3" className="mt-auto ">
+              <button
+                className="border-2 p-2 mt-auto cursor-pointer transition-colors duration-500 rounded-md
+              active:scale-95 hover:bg-blue-200   dark:text-white dark:hover:bg-blue-900"
+              >
+                About the project
+              </button>
+            </Link>
+          </article>
+        </div>
+      </main>
     </div>
   );
 }
