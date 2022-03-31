@@ -31,6 +31,30 @@ function App() {
               element={<Project mode={mode} setMode={setMode} />}
             />
             <Route
+              path="/Project/1"
+              element={
+                <>
+                  <h1>Project 1</h1>
+                </>
+              }
+            />
+            <Route
+              path="/Project/2"
+              element={
+                <>
+                  <h1>Project 2</h1>
+                </>
+              }
+            />
+            <Route
+              path="/Project/3"
+              element={
+                <>
+                  <h1>Project 3</h1>
+                </>
+              }
+            />
+            <Route
               path="/Contact"
               element={<Contact mode={mode} setMode={setMode} />}
             />
