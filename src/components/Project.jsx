@@ -8,7 +8,7 @@ function Project({ mode, setMode }) {
     <div className="flex flex-col items-center justify-center transition duration-500 ease-out bg-slate-50 dark:bg-black dark:text-white h-screen overflow-auto p-20">
       <Navbar />
       <Footer />
-      <main className="font-Karma flex flex-col items-center overflow-auto">
+      <main className="font-Karma flex flex-col items-center overflow-auto text-xl">
         <p>
           Day to day I spend most of my time learning and building stuff,here's
           some of the stuff I've done personally recently.
