@@ -10,7 +10,7 @@ function Contact({ mode, setMode }) {
       <main className="font-Karma m-10 p-10 h-3/4">
         <section>
           <h1 className="text-6xl">PING ME</h1>
-          <p className="text-2xl leading-loose">
+          <p className="text-xl leading-loose">
             Want to say "Hey!"? Got something you'd like to ask? <br />
             Ask for my resume? Or see if we can build something amazing
             together? <br />
@@ -18,7 +18,7 @@ function Contact({ mode, setMode }) {
           </p>
         </section>
 
-        <form className="flex flex-col text-2xl gap-5 ">
+        <form className="flex flex-col text-xl gap-5 ">
           <div className="flex flex-col">
             <label htmlFor="name">Name *</label>
             <input
