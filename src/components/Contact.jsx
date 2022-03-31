@@ -7,9 +7,9 @@ function Contact({ mode, setMode }) {
     <div className="flex flex-col items-center justify-center transition duration-500 ease-out bg-slate-50 dark:bg-black dark:text-white h-screen overflow-auto">
       <Navbar />
       <Footer />
-      <main className="font-Karma m-20 p-16 overflow-auto">
+      <main className="font-Karma m-10 p-10 h-3/4">
         <section>
-          <h1 className="text-7xl">PING ME</h1>
+          <h1 className="text-6xl">PING ME</h1>
           <p className="text-2xl leading-loose">
             Want to say "Hey!"? Got something you'd like to ask? <br />
             Ask for my resume? Or see if we can build something amazing
