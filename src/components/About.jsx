@@ -4,16 +4,15 @@ import Footer from "./Footer";
 
 function About({ mode, setMode }) {
   return (
-    <div className="flex flex-col items-center justify-center transition duration-500 ease-out bg-neutral-100 dark:bg-black dark:text-white h-screen">
-      <Navbar />
+    <div className="flex flex-col items-center justify-center transition duration-500 ease-out bg-neutral-100 dark:bg-black dark:text-white h-screen overflow-auto">
+      <Navbar active={"About"} />
       <Footer />
-      <main className="flex flex-wrap justify-around items-center font-Karma m-10 p-10">
+      <main className="flex flex-wrap justify-around items-center font-Karma m-10 p-10 h-full">
         <div className="min-w-[400px] w-1/2 p-4 leading-loose text-justify text-xl">
           <p>
             Growing up, I always had an affinity for tech and computers. Coming
             from a background of continuous practice and performance I was
-            immediately enthralled by the similarity in development in creating
-            new products and experiences in a satisfyingly tangible manner.
+            immediately enthralled by the similarity in web development.
             Committed to the idea of life-long learning, I am a full stack
             developer with a passion for Javascript, React, and all things web
             development. And as a follower of John Maeda’s laws of simplicity, I

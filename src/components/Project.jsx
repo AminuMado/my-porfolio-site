@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 function Project({ mode, setMode }) {
   return (
     <div className="flex flex-col items-center justify-center transition duration-500 ease-out bg-slate-50 dark:bg-black dark:text-white h-screen overflow-auto p-20">
-      <Navbar />
+      <Navbar active={"Project"} />
       <Footer />
-      <main className="font-Karma flex flex-col items-center overflow-auto text-xl">
+      <main className="font-Karma m-10  p-10 flex flex-col items-center h-full text-xl">
         <p>
           Day to day I spend most of my time learning and building stuff,here's
           some of the stuff I've done personally recently.

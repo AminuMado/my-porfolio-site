@@ -22,7 +22,7 @@ function Home() {
         </div>
       </div>
 
-      <Navbar />
+      <Navbar active={"Home"} />
       <Footer />
     </div>
   );

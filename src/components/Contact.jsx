@@ -5,9 +5,9 @@ import Footer from "./Footer";
 function Contact({ mode, setMode }) {
   return (
     <div className="flex flex-col items-center justify-center transition duration-500 ease-out bg-slate-50 dark:bg-black dark:text-white h-screen overflow-auto">
-      <Navbar />
+      <Navbar active={"Contact"} />
       <Footer />
-      <main className="font-Karma m-10 p-10 h-3/4">
+      <main className="font-Karma  m-20 p-10 h-full">
         <section>
           <h1 className="text-6xl">PING ME</h1>
           <p className="text-xl leading-loose">
