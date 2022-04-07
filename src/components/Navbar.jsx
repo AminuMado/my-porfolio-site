@@ -5,7 +5,7 @@ function Navbar({ active }) {
   const styles = {
     default:
       "cursor-pointer transition-all duration-75 hover:text-green-400 active:scale-95",
-    active: "text-blue-300",
+    active: "cursor-default text-blue-300",
   };
   const navList = [
     { name: "Home", link: "/" },
